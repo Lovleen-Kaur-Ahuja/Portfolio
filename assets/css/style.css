@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root{
+	--yellow: #F0A500;
+	--black: #000000;
+	--dark-grey: #1A1A1A;
+	--white: #FFF;
+}
+
+
+*{
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	outline: none;
+	border: none;
+	transition: all .2s linear;
+}
+
+*::selection{
+	background: var(--yellow);
+	color: var(--black);
+}
+
+html{
+	font-size: 62.5%;
+}
+
+section{
+    min-height: 100vh;
+    padding:1rem;
+}
+
+body{
+	font-family: var(--primary-font);
+	background: var(--black);
+	color: var(--yellow);
+	overflow-x: hidden; 
+	padding-left: 35rem;
+}
+
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	height: 100%;
+	width: 35rem;
+	background: var(--black);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: column;
+	text-align: center;
+}
+
+header  .user img{
+	height: 17rem;
+	width: 17rem;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	border: 0.7rem solid var(--yellow);
+}
+
+header .user .name{
+	font-size: 3rem;
+	color: var(--white);
+}
+
+header .user .post{
+	font-size: 2rem;
+	color: #eee;
+}
+
+header .navbar-custom{
+	width: 100%;
+}
+
+header .navbar-custom ul{
+	list-style: none;
+	padding: 1rem 3rem;
+}
+
+header .navbar-custom ul li a{
+	text-decoration: none;
+	display: block;
+	padding: 0.5rem;
+	margin:1.5rem 0;
+	background: #333;
+	color: var(--white);
+	font-size: 2rem;
+	border-radius: 5rem
+}
+
+header .navbar-custom ul li a:active{
+	color: var(--yellow);
+}
+
+header .navbar-custom ul li a:hover{
+	background: var(--yellow);
+	color: var(--black);
+}
+
+#menu{
+	position: fixed;
+	top: 1rem;
+	right: 2rem;
+	background: #333;
+	color: var(--white);
+	cursor: pointer;
+	font-size: 1.5rem;
+	padding: 1rem 1.5rem;
+	z-index: 1000;
+	display: none;
+}
+
+.about{
+	flex-flow: column;
+	padding: 0 15rem;
+}
+
+.about h3{
+	font-size: 2.5rem;
+	color: var(--white);
+}
+
+.about h1{
+	font-size: 5rem;
+	color: var(--white);
+}
+
+.about h1 span{
+	color: var(--yellow);
+}
+
+.about p{
+	font-size: 2rem;
+	color: var(--white);
+	padding: 1rem 0;
+}
+
+.btn{
+	padding: 1rem 3rem;
+	margin-top: 1rem;
+	background: var(--dark-grey);
+	color: var(--white);
+	cursor: pointer;
+	font-size: 2rem;
+	border-radius: 5rem;
+}
+
+.btn span{
+	padding: 0.5rem;
+	font-size: 1.8rem;
+}
+
+.btn:hover{
+	background: var(--yellow);
+}
+
+/*Education CSS*/
+.education .box{
+    display: flex;
+    flex-direction: row;
+    margin: 6rem 0;
+}
+
+.education .box .year{
+    min-width: 150px;
+}
+
+.education .box .year h5{
+	float: right;
+	font-size: 2rem;
+    color: var(--yellow);
+}
+
+.education .box .year h4{
+    text-transform: uppercase;
+    color: var(--yellow);
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.education .box .text h4{
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.education .box .text p{
+	font-size: 1.7rem;
+	color: var(--white);
+}
+
+.contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact .row .content{
+    flex:1 1 30rem;
+    padding:4rem;
+    padding-bottom: 0;
+}
+
+.contact .row form{
+    flex:1 1 45rem;
+    padding:2rem;
+    margin:2rem;
+    margin-bottom: 4rem;
+}
+
+.contact .row form .box{
+    padding:1.5rem;
+    margin:1rem 0;
+    background:#3333;
+    color:#fff;
+    text-transform: none;
+    font-size: 1.7rem;
+    width:100%;
+}
+
+.heading{
+    text-align: center;
+    margin:0 6rem;
+    font-size: 4rem;
+    padding:1rem;
+    border-bottom: .1rem solid #fff4;
+    color:#fff;
+}
+
+.heading span{
+    color:var(--yellow);
+}
+
+/*Project CSS*/
+.projects .icon-box{
+	text-align: center;
+	background: var(--black);
+	border: 2px solid var(--yellow);
+	box-shadow: 0 3rem 1.2rem rgb(248 181 0/ 16%);
+	padding: 4rem 4rem;
+	margin-top: 10rem;
+	height: 40rem;
+	transition: all ease-in-out 0.3s;
+}
+
+.projects .icon-box .icon{
+	color: var(--black);
+	font-size: 5rem;
+	text-align: center;
+	margin: 0 auto;
+	width: 6rem;
+	height: 6rem;
+	background: var(--yellow);
+	border-radius: 0.5rem;
+	transition: all 0.3s ease-out;
+	display: cover;
+	align-items: center;
+	margin-bottom: 1rem;
+	transform-style: preserve-3d;
+}
+
+.projects .icon-box .icon:before{
+	position: absolute;
+	content: '';
+	left: -0.7rem;
+	top: -0.7rem;
+	height: 100%;
+	width: 100%;
+	background: rgba(255, 255, 255 ,0.15);
+	border-radius: 0.5px;
+	transition: all 0.3s ease-out 0s;
+	transform: translateZ(-1px);
+}
+
+.projects .icon-box h4{
+	font-weight: 700;
+	margin-bottom: 0.7rem;
+	font-size: 2.5rem;
+}
+
+.projects .icon-box h4 a{
+	color: var(--white);
+}
+
+.projects .icon-box p{
+	margin-top: 3rem;
+	color: var(--yellow);
+	line-height: 2.5rem;
+	font-size: 2rem;
+	margin-bottom: 0;
+}
+
+.projects .icon-box:hover{
+	background: rgba(204,204,204,0.1);
+}
+
+
+/*Skill CSS*/
+.skills{
+	margin:10rem 2rem;
+	padding-bottom: 6rem;
+}
+.skills .progress{
+	height: 6rem;
+	display: block;
+	background: none;
+}
+
+.skills .progress .skill{
+	padding: 0.5rem 0;
+	font-size: 1.7rem;
+	margin: 0 0 1rem 0;
+	text-transform: uppercase;
+	display: block;
+	font-weight: 600;
+	color: var(--white);
+}
+
+.skills .progress .skill .val{
+	float: right;
+	font-style: normal;
+}
+
+.skills .progress-bar-wrap{
+	background: rgba(255, 255, 255, 0.15);
+}
+
+.skills .progress-bar{
+	height: 6rem;
+	transition: 0.9s;
+	background-color: var(--yellow);
+}
+
+
+.contact .row form .box::placeholder{
+    text-transform: capitalize;
+}
+
+.contact .row form .message{
+    height: 15rem;
+    resize: none;
+}
+
+.contact .row .content .title{
+    text-transform: uppercase;
+    color:#fff;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.contact .row .content .info h3{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color:#eee;
+    padding:1rem 0;
+    font-weight: normal;
+}
+
+.contact .row .content .info h3 i{
+    padding-right: 1rem;
+    color: var(--yellow);
+}
+
+.contact .row .content .info h3 a{
+		text-decoration: none;
+		color: var(--white);
+}
+
+#scrollUp{
+	position: fixed;
+	right: 2%;
+	bottom: 3%;
+	height: 5rem;
+	width: 5rem;
+	border-radius: 2.5rem;
+	text-align: center;
+	z-index: 700;
+	display: none;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+
+#scrollUp span{
+	font-size: 3rem;
+	line-height: 5rem;
+}
+
+#scrollUp.scrollActive{
+	display: block;
+}

@@ -1,0 +1,50 @@
+@media (max-width: 1030px){
+	html{
+		font-size: 55%;
+	}
+}
+
+@media (max-width: 991px){
+
+	header{
+		left: -120%;
+	}
+
+	#menu{
+		display: block;
+	}
+
+	header.toggle{
+		left: 0%;
+	}
+
+	body{
+		padding: 0;
+	}
+
+	.about{
+		padding: 2rem;
+	}
+}
+
+@media (max-width: 767px){
+	header{
+		width: 100vw;
+	}
+
+	.projects .icon-box p{
+		line-height: 2.5rem;
+		font-size: 1.7rem;
+	}
+
+	.skills{
+		margin: 4rem 1.2rem;
+	}
+}
+
+@media (max-width: 330px){
+
+	header{
+		width: 100vw;
+	}
+}

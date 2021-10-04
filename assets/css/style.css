@@ -158,6 +158,11 @@ header .navbar-custom ul li a:hover{
 	font-size: 1.8rem;
 }
 
+.btn a{
+	text-decoration: none;
+	color: var(--white);
+}
+
 .btn:hover{
 	background: var(--yellow);
 }

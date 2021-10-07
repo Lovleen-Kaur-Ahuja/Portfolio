@@ -504,6 +504,14 @@ header .navbar-custom ul li a:hover{
 		color: var(--white);
 }
 
+/*Footer CSS*/
+.copyright p,
+.copyright a{
+	margin: 0;
+	font-size: 1.8rem;
+	color: var(--white);
+}
+
 #scrollUp{
 	position: fixed;
 	right: 2%;

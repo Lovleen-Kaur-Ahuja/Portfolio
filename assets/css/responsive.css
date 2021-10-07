@@ -1,6 +1,16 @@
-@media (max-width: 1030px){
+@media (max-width: 1024px){
 	html{
 		font-size: 55%;
+	}
+}
+
+@media (height: 1366px){
+	section{
+	    min-height: 50vh;
+	    padding:1rem;
+	}
+	.about h1{
+		font-size: 4rem;
 	}
 }
 
@@ -26,6 +36,7 @@
 		padding: 2rem;
 	}
 }
+
 
 @media (max-width: 767px){
 	header{
